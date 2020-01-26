@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Csucs.cs" />
+    <Compile Include="CsucsAdat.cs" />
     <Compile Include="El.cs" />
     <Compile Include="Graf.cs" />
     <Compile Include="Program.cs" />

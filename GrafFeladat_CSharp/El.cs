@@ -15,6 +15,8 @@
         /// </summary>
         public int Csucs2 { get; private set; }
 
+        public double Suly { get; private set; }
+
         /// <summary>
         /// Létrehoz egy úgy élt.
         /// </summary>
@@ -24,6 +26,7 @@
         {
             this.Csucs1 = csucs1;
             this.Csucs2 = csucs2;
+            this.Suly = suly;
         }
 
         public override string ToString()

@@ -21,6 +21,21 @@ namespace GrafFeladat_CSharp
             graf.Hozzaad(2, 4);
 
             Console.WriteLine(graf);
+
+            Console.WriteLine("Szélesség Bejárasa 2. kezdőponttól");
+            graf.szelessegiBejar(2);
+            Console.WriteLine("Mélyeségi Bejárasa 2. kezdőponttól");
+            graf.melysegiBejar(2);
+            Console.WriteLine("Összefüggőség megvizsgálása: {0}", graf.osszefuggo());
+            var feszitoFa = graf.feszitoFa();
+            Console.WriteLine(feszitoFa);
+            var sulyok = new Dictionary<int, CsucsAdat>(graf.Dijkstra(2));
+            foreach (var i in sulyok)
+            {
+                Console.WriteLine(i.Key + " a csúcsba eljutni: " + i.Value.koltseg);
+            }
+
+
             Console.ReadLine();
         }
     }
